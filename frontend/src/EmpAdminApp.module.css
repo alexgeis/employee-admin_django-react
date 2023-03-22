@@ -1,0 +1,33 @@
+.container {
+	width: 80%;
+	margin: 40px auto 0;
+}
+.container * + * {
+	margin-top: 1.5em;
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	margin: 10px auto;
+}
+.employeeContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.btnAdd {
+	padding: 8px 0;
+	background-color: rgb(0, 55, 255);
+	color: white;
+}
+.btdAdd:active {
+	transform: scale(0.9);
+}
+.employeeList {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(auto-fill, minmax(fit-content, 100px));
+	padding: 3px;
+}
