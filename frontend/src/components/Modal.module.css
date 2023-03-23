@@ -1,0 +1,69 @@
+.modalOverlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	/* or try 100% */
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 9;
+}
+
+.modalContentContainer {
+	width: 320px;
+	padding: 0 10px;
+	margin: 0 auto;
+
+	border: 1px white solid;
+	border-radius: 15px;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	z-index: 99;
+}
+
+.header {
+	text-align: center;
+}
+.body {
+	width: 100%;
+	margin: 5px auto;
+}
+
+form > fieldset {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+
+	border-radius: 15px;
+}
+
+.formLabel {
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+.formLabel::placeholder {
+	text-decoration: none;
+}
+
+form input[type="checkbox"] {
+	margin-right: 80px;
+}
+
+.footer {
+	width: 100%;
+	padding: 0 0 10px;
+	display: flex;
+	justify-content: center;
+}
+.btnSubmit {
+	background-color: green;
+	color: white;
+}
